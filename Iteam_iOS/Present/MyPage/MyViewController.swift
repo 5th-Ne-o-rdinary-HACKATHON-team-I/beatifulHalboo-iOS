@@ -157,6 +157,7 @@ class MyViewController: BaseViewController {
 
 
     override func configure() {
+        self.doneBtn.addTarget(self, action:#selector(doneBtnTap), for: .touchUpInside)
 
     }
     
@@ -289,5 +290,12 @@ extension MyViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0
+    }
+}
+extension MyViewController {
+    @objc func doneBtnTap() {
+        let vc = PopupViewController()
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc,animated: false,completion: nil)
     }
 }

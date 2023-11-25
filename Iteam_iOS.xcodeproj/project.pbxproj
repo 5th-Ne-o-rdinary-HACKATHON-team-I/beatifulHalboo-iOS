@@ -53,6 +53,7 @@
 		091036DD2B1273B50065A229 /* thirtyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036DC2B1273B50065A229 /* thirtyView.swift */; };
 		091036DF2B127A760065A229 /* thousndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036DE2B127A760065A229 /* thousndView.swift */; };
 		091036E12B127B310065A229 /* thirty2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036E02B127B310065A229 /* thirty2View.swift */; };
+		091036E32B1281060065A229 /* thousnd2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036E22B1281060065A229 /* thousnd2View.swift */; };
 		09D4221D2B11D16200A81F15 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		091036DC2B1273B50065A229 /* thirtyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirtyView.swift; sourceTree = "<group>"; };
 		091036DE2B127A760065A229 /* thousndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thousndView.swift; sourceTree = "<group>"; };
 		091036E02B127B310065A229 /* thirty2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirty2View.swift; sourceTree = "<group>"; };
+		091036E22B1281060065A229 /* thousnd2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thousnd2View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				091036DC2B1273B50065A229 /* thirtyView.swift */,
 				091036DE2B127A760065A229 /* thousndView.swift */,
 				091036E02B127B310065A229 /* thirty2View.swift */,
+				091036E22B1281060065A229 /* thousnd2View.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				0910368F2B11B1890065A229 /* String+.swift in Sources */,
 				091036D12B12544C0065A229 /* LoginModel.swift in Sources */,
 				091036652B1184C20065A229 /* ViewController.swift in Sources */,
+				091036E32B1281060065A229 /* thousnd2View.swift in Sources */,
 				091036BF2B1221220065A229 /* DetailSubViewController.swift in Sources */,
 				091036882B11ABA70065A229 /* APIConstant.swift in Sources */,
 				091036B82B1210740065A229 /* bodyView.swift in Sources */,
