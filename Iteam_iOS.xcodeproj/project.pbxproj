@@ -17,6 +17,7 @@
 		0910367C2B118EB60065A229 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0910367B2B118EB60065A229 /* Then */; };
 		091036812B11945F0065A229 /* tempService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036802B11945F0065A229 /* tempService.swift */; };
 		091036832B1194650065A229 /* tempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036822B1194650065A229 /* tempModel.swift */; };
+		091036862B11AAB80065A229 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 091036852B11AAB80065A229 /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 			files = (
 				091036762B118E9E0065A229 /* SnapKit in Frameworks */,
 				0910367C2B118EB60065A229 /* Then in Frameworks */,
+				091036862B11AAB80065A229 /* Moya in Frameworks */,
 				091036792B118EA80065A229 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +122,7 @@
 				091036752B118E9E0065A229 /* SnapKit */,
 				091036782B118EA80065A229 /* Alamofire */,
 				0910367B2B118EB60065A229 /* Then */,
+				091036852B11AAB80065A229 /* Moya */,
 			);
 			productName = Iteam_iOS;
 			productReference = 0910365D2B1184C20065A229 /* Iteam_iOS.app */;
@@ -153,6 +156,7 @@
 				091036742B118E9E0065A229 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				091036772B118EA80065A229 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0910367A2B118EB60065A229 /* XCRemoteSwiftPackageReference "Then" */,
+				091036842B11AAB80065A229 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 0910365E2B1184C20065A229 /* Products */;
 			projectDirPath = "";
@@ -420,6 +424,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		091036842B11AAB80065A229 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -437,6 +449,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0910367A2B118EB60065A229 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		091036852B11AAB80065A229 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 091036842B11AAB80065A229 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
