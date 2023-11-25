@@ -7,14 +7,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .blue
-        // Do any additional setup after loading the view.
+class ViewController: BaseViewController {
+    
+    private let label = UILabel().then {
+        $0.text = "assfsf"
+        $0.font = .pretendard(.Bold, size: 23)
+        $0.textColor = .black
+        $0.sizeToFit()
     }
-
-
+    
+    override func configure() {
+        self.view.backgroundColor = .white
+    }
+    
+    override func addview() {
+        self.view.addSubview(label)
+    }
+    
+    override func layout() {
+        self.label.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.centerY.equalToSuperview()
+        }
+    }
 }
 

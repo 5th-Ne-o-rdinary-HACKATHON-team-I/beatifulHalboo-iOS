@@ -18,6 +18,20 @@
 		091036812B11945F0065A229 /* tempService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036802B11945F0065A229 /* tempService.swift */; };
 		091036832B1194650065A229 /* tempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036822B1194650065A229 /* tempModel.swift */; };
 		091036862B11AAB80065A229 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 091036852B11AAB80065A229 /* Moya */; };
+		091036882B11ABA70065A229 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036872B11ABA70065A229 /* APIConstant.swift */; };
+		0910368B2B11B1130065A229 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910368A2B11B1130065A229 /* Color+.swift */; };
+		0910368F2B11B1890065A229 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910368E2B11B1890065A229 /* String+.swift */; };
+		091036912B11B2120065A229 /* Fonts+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036902B11B2120065A229 /* Fonts+.swift */; };
+		0910369C2B11B2600065A229 /* SUIT-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 091036932B11B25F0065A229 /* SUIT-ExtraLight.ttf */; };
+		0910369D2B11B2600065A229 /* SUIT-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 091036942B11B25F0065A229 /* SUIT-Medium.ttf */; };
+		0910369E2B11B2600065A229 /* SUIT-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 091036952B11B25F0065A229 /* SUIT-Thin.ttf */; };
+		0910369F2B11B2600065A229 /* SUIT-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 091036962B11B25F0065A229 /* SUIT-Light.ttf */; };
+		091036A02B11B2600065A229 /* SUIT-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 091036972B11B25F0065A229 /* SUIT-ExtraBold.ttf */; };
+		091036A12B11B2600065A229 /* SUIT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 091036982B11B25F0065A229 /* SUIT-Bold.ttf */; };
+		091036A22B11B2600065A229 /* SUIT-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 091036992B11B2600065A229 /* SUIT-Heavy.ttf */; };
+		091036A32B11B2600065A229 /* SUIT-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0910369A2B11B2600065A229 /* SUIT-SemiBold.ttf */; };
+		091036A42B11B2600065A229 /* SUIT-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0910369B2B11B2600065A229 /* SUIT-Regular.ttf */; };
+		091036A72B11B3010065A229 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036A62B11B3010065A229 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +44,20 @@
 		0910366E2B1184C40065A229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		091036802B11945F0065A229 /* tempService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempService.swift; sourceTree = "<group>"; };
 		091036822B1194650065A229 /* tempModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempModel.swift; sourceTree = "<group>"; };
+		091036872B11ABA70065A229 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		0910368A2B11B1130065A229 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		0910368E2B11B1890065A229 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		091036902B11B2120065A229 /* Fonts+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+.swift"; sourceTree = "<group>"; };
+		091036932B11B25F0065A229 /* SUIT-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-ExtraLight.ttf"; sourceTree = "<group>"; };
+		091036942B11B25F0065A229 /* SUIT-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Medium.ttf"; sourceTree = "<group>"; };
+		091036952B11B25F0065A229 /* SUIT-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Thin.ttf"; sourceTree = "<group>"; };
+		091036962B11B25F0065A229 /* SUIT-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Light.ttf"; sourceTree = "<group>"; };
+		091036972B11B25F0065A229 /* SUIT-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-ExtraBold.ttf"; sourceTree = "<group>"; };
+		091036982B11B25F0065A229 /* SUIT-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Bold.ttf"; sourceTree = "<group>"; };
+		091036992B11B2600065A229 /* SUIT-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Heavy.ttf"; sourceTree = "<group>"; };
+		0910369A2B11B2600065A229 /* SUIT-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-SemiBold.ttf"; sourceTree = "<group>"; };
+		0910369B2B11B2600065A229 /* SUIT-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Regular.ttf"; sourceTree = "<group>"; };
+		091036A62B11B3010065A229 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +94,13 @@
 		0910365F2B1184C20065A229 /* Iteam_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				091036922B11B2370065A229 /* Resource */,
+				0910368C2B11B1640065A229 /* Global */,
 				0910367F2B1194500065A229 /* Present */,
 				0910367E2B11944B0065A229 /* Service */,
 				0910367D2B11943C0065A229 /* Model */,
 				091036602B1184C20065A229 /* AppDelegate.swift */,
 				091036622B1184C20065A229 /* SceneDelegate.swift */,
-				091036692B1184C40065A229 /* Assets.xcassets */,
 				0910366B2B1184C40065A229 /* LaunchScreen.storyboard */,
 				0910366E2B1184C40065A229 /* Info.plist */,
 			);
@@ -90,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				091036802B11945F0065A229 /* tempService.swift */,
+				091036872B11ABA70065A229 /* APIConstant.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -100,6 +130,50 @@
 				091036642B1184C20065A229 /* ViewController.swift */,
 			);
 			path = Present;
+			sourceTree = "<group>";
+		};
+		091036892B11B1050065A229 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0910368A2B11B1130065A229 /* Color+.swift */,
+				0910368E2B11B1890065A229 /* String+.swift */,
+				091036902B11B2120065A229 /* Fonts+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0910368C2B11B1640065A229 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				091036A52B11B2E40065A229 /* UI */,
+				091036892B11B1050065A229 /* Extension */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		091036922B11B2370065A229 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				091036692B1184C40065A229 /* Assets.xcassets */,
+				091036982B11B25F0065A229 /* SUIT-Bold.ttf */,
+				091036972B11B25F0065A229 /* SUIT-ExtraBold.ttf */,
+				091036932B11B25F0065A229 /* SUIT-ExtraLight.ttf */,
+				091036992B11B2600065A229 /* SUIT-Heavy.ttf */,
+				091036962B11B25F0065A229 /* SUIT-Light.ttf */,
+				091036942B11B25F0065A229 /* SUIT-Medium.ttf */,
+				0910369B2B11B2600065A229 /* SUIT-Regular.ttf */,
+				0910369A2B11B2600065A229 /* SUIT-SemiBold.ttf */,
+				091036952B11B25F0065A229 /* SUIT-Thin.ttf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		091036A52B11B2E40065A229 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				091036A62B11B3010065A229 /* BaseViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +246,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091036A42B11B2600065A229 /* SUIT-Regular.ttf in Resources */,
 				0910366D2B1184C40065A229 /* LaunchScreen.storyboard in Resources */,
+				0910369C2B11B2600065A229 /* SUIT-ExtraLight.ttf in Resources */,
+				0910369E2B11B2600065A229 /* SUIT-Thin.ttf in Resources */,
+				091036A02B11B2600065A229 /* SUIT-ExtraBold.ttf in Resources */,
+				091036A22B11B2600065A229 /* SUIT-Heavy.ttf in Resources */,
+				091036A12B11B2600065A229 /* SUIT-Bold.ttf in Resources */,
+				0910369D2B11B2600065A229 /* SUIT-Medium.ttf in Resources */,
+				0910369F2B11B2600065A229 /* SUIT-Light.ttf in Resources */,
+				091036A32B11B2600065A229 /* SUIT-SemiBold.ttf in Resources */,
 				0910366A2B1184C40065A229 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,11 +267,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0910368B2B11B1130065A229 /* Color+.swift in Sources */,
 				091036832B1194650065A229 /* tempModel.swift in Sources */,
+				0910368F2B11B1890065A229 /* String+.swift in Sources */,
 				091036652B1184C20065A229 /* ViewController.swift in Sources */,
+				091036882B11ABA70065A229 /* APIConstant.swift in Sources */,
+				091036A72B11B3010065A229 /* BaseViewController.swift in Sources */,
 				091036612B1184C20065A229 /* AppDelegate.swift in Sources */,
 				091036632B1184C20065A229 /* SceneDelegate.swift in Sources */,
 				091036812B11945F0065A229 /* tempService.swift in Sources */,
+				091036912B11B2120065A229 /* Fonts+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
