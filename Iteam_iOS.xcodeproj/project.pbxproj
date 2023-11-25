@@ -34,6 +34,7 @@
 		091036A72B11B3010065A229 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036A62B11B3010065A229 /* BaseViewController.swift */; };
 		091036A92B11E0750065A229 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 091036A82B11E0750065A229 /* GoogleService-Info.plist */; };
 		091036AC2B11E1880065A229 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 091036AB2B11E1880065A229 /* FirebaseMessaging */; };
+		091036B12B11EA440065A229 /* tempEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036B02B11EA440065A229 /* tempEnum.swift */; };
 		09D4221D2B11D16200A81F15 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		091036A62B11B3010065A229 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		091036A82B11E0750065A229 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		091036AD2B11E2F70065A229 /* Iteam_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Iteam_iOS.entitlements; sourceTree = "<group>"; };
+		091036B02B11EA440065A229 /* tempEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				091036822B1194650065A229 /* tempModel.swift */,
+				091036B02B11EA440065A229 /* tempEnum.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				091036882B11ABA70065A229 /* APIConstant.swift in Sources */,
 				091036A72B11B3010065A229 /* BaseViewController.swift in Sources */,
 				091036612B1184C20065A229 /* AppDelegate.swift in Sources */,
+				091036B12B11EA440065A229 /* tempEnum.swift in Sources */,
 				091036632B1184C20065A229 /* SceneDelegate.swift in Sources */,
 				091036812B11945F0065A229 /* tempService.swift in Sources */,
 				091036912B11B2120065A229 /* Fonts+.swift in Sources */,
