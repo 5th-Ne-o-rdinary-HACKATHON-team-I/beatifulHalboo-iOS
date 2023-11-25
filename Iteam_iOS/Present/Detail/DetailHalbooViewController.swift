@@ -129,6 +129,9 @@ class DetailHalbooViewController: BaseViewController {
             $0.leading.equalToSuperview().offset(16)
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
 }
 extension DetailHalbooViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

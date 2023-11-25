@@ -13,6 +13,6 @@ class UserInfo {
     var name: String?
     var email: String?
     var earn: Int?
-    
+    var safe: Bool?
     private init() {}
 }

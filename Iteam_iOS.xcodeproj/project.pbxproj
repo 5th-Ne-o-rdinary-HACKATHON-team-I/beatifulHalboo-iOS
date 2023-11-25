@@ -54,6 +54,7 @@
 		091036DF2B127A760065A229 /* thousndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036DE2B127A760065A229 /* thousndView.swift */; };
 		091036E12B127B310065A229 /* thirty2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036E02B127B310065A229 /* thirty2View.swift */; };
 		091036E32B1281060065A229 /* thousnd2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036E22B1281060065A229 /* thousnd2View.swift */; };
+		091036F32B12988C0065A229 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036F22B12988C0065A229 /* HomeService.swift */; };
 		09D4221D2B11D16200A81F15 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		091036DE2B127A760065A229 /* thousndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thousndView.swift; sourceTree = "<group>"; };
 		091036E02B127B310065A229 /* thirty2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirty2View.swift; sourceTree = "<group>"; };
 		091036E22B1281060065A229 /* thousnd2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thousnd2View.swift; sourceTree = "<group>"; };
+		091036F22B12988C0065A229 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				091036802B11945F0065A229 /* tempService.swift */,
 				091036872B11ABA70065A229 /* APIConstant.swift */,
 				091036CD2B12543E0065A229 /* LoginService.swift */,
+				091036F22B12988C0065A229 /* HomeService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				091036B42B11FFC40065A229 /* HomeViewController.swift in Sources */,
 				091036DF2B127A760065A229 /* thousndView.swift in Sources */,
 				091036DA2B1267B00065A229 /* UserInfo.swift in Sources */,
+				091036F32B12988C0065A229 /* HomeService.swift in Sources */,
 				091036D82B1266C00065A229 /* PopupViewController.swift in Sources */,
 				091036DD2B1273B50065A229 /* thirtyView.swift in Sources */,
 			);

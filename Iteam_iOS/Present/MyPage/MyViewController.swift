@@ -8,6 +8,7 @@
 import UIKit
 
 class MyViewController: BaseViewController {
+    
     private let scrollView = UIScrollView()
     
     private let contentView = UIView().then {
@@ -31,6 +32,7 @@ class MyViewController: BaseViewController {
     }
     private let img = UIImageView().then {
         $0.contentMode = .scaleAspectFit
+        $0.image = UIImage(named: "pashan")
     }
     private let charNameLabel = UILabel().then {
         $0.text = "파산이"
@@ -154,10 +156,19 @@ class MyViewController: BaseViewController {
         $0.backgroundColor = UIColor(hexString: "#FD442B")
         
     }
-
+    private let thousnd = thousndView()
+    private let thousnd2 = thousnd2View()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if UserInfo.shared.safe == true {
+            self.safe()
+        }
+    }
 
     override func configure() {
         self.doneBtn.addTarget(self, action:#selector(doneBtnTap), for: .touchUpInside)
+        self.thousnd.isHidden = true
+        self.thousnd2.isHidden = true
 
     }
     
@@ -187,9 +198,21 @@ class MyViewController: BaseViewController {
         self.analyzeView.addSubview(bottomPrice)
         self.contentView.addSubview(thrity)
         self.contentView.addSubview(doneBtn)
+        self.contentView.addSubview(thousnd)
+        self.contentView.addSubview(thousnd2)
     }
     
     override func layout() {
+        self.thousnd2.snp.makeConstraints {
+            $0.top.equalTo(thrity.snp.bottom).offset(16)
+            $0.horizontalEdges.equalToSuperview().inset(16)
+            $0.height.equalTo(211)
+        }
+        self.thousnd.snp.makeConstraints {
+            $0.top.equalTo(analyzeView.snp.bottom).offset(16)
+            $0.horizontalEdges.equalToSuperview().inset(16)
+            $0.height.equalTo(211)
+        }
         self.doneBtn.snp.makeConstraints {
             $0.bottom.equalToSuperview().offset(-15)
             $0.height.equalTo(42)
@@ -293,7 +316,23 @@ extension MyViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 extension MyViewController {
+    private func safe() {
+        self.managementView.isHidden = true
+        self.thrity.isHidden = true
+        self.thousnd.isHidden = false
+        self.thousnd2.isHidden = false
+        self.progressView.progress = 0.15
+        self.progressView.progressTintColor = UIColor(hexString: "#29CD0E")
+        self.perLabel.text = "15%"
+        self.img.image = UIImage(named: "love")
+        self.charNameLabel.text = "안전이"
+        self.charNameLabel.textColor = UIColor(hexString: "#29CD0E")
+        self.distroyLabel.text = "안전"
+        self.distroyLabel.textColor = UIColor(hexString: "#29CD0E")
+
+    }
     @objc func doneBtnTap() {
+        self.safe()
         let vc = PopupViewController()
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc,animated: false,completion: nil)

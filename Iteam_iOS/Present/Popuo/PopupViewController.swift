@@ -22,7 +22,7 @@ class PopupViewController: BaseViewController {
         $0.sizeToFit()
     }
     private let priceTextField = UITextField().then {
-        $0.placeholder = " 예:300만원"
+        $0.placeholder = "숫자를 입력하시면 자동으로 변환됩니다."
         $0.layer.cornerRadius = 10
         $0.layer.borderColor = UIColor.lightGray.cgColor
         $0.layer.borderWidth = 1
@@ -43,8 +43,15 @@ class PopupViewController: BaseViewController {
     }
     
     override func configure() {
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         self.view.isOpaque = false
+        self.doneBtn.addTarget(self, action:#selector(doneBtnTap), for: .touchUpInside)
+        self.priceTextField.delegate = self
+
+    }
+    @objc func doneBtnTap() {
+        self.dismiss(animated: false)
+        
     }
     
     override func addview() {
@@ -83,6 +90,41 @@ class PopupViewController: BaseViewController {
             $0.height.equalTo(42)
         }
     }
-
 }
+extension PopupViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else { return true }
 
+        // 숫자와 백스페이스인 경우에만 동작하도록 함
+        let allowedCharacterSet = CharacterSet(charactersIn: "0123456789")
+        let invertedSet = allowedCharacterSet.inverted
+        let components = string.components(separatedBy: invertedSet)
+        let filtered = components.joined(separator: "")
+        if string != filtered {
+            return false
+        }
+
+        // 현재 텍스트에서 컴마 제거
+        let currentTextWithoutComma = text.replacingOccurrences(of: ",", with: "")
+
+        // 입력된 숫자에 쉼표 추가
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 0
+
+        if let number = formatter.number(from: currentTextWithoutComma + string) {
+            textField.text = formatter.string(from: number)
+            if number == 10000000{
+                UserInfo.shared.safe = true
+
+            }
+        } else {
+            textField.text = currentTextWithoutComma + string
+        }
+        
+
+
+        return false
+    }
+}

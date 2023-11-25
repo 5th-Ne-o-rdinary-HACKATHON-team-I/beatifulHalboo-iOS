@@ -12,6 +12,8 @@ import AVFoundation
 class HomeViewController: BaseViewController {
     
     private let scrollView = UIScrollView()
+    private let service = HomeService()
+    private var dto: [SubscribeDTO] = []
     
     private let contentView = UIView().then {
         $0.backgroundColor = UIColor(hexString: "#F7F7F7")
@@ -65,7 +67,7 @@ class HomeViewController: BaseViewController {
         $0.backgroundColor = .white
     }
     private let profileImg = UIImageView().then {
-        $0.image = UIImage(named: "_레이어_1 1")
+        $0.image = UIImage(named: "pashan")
         $0.contentMode = .scaleAspectFit
         $0.layer.cornerRadius = 15
         $0.backgroundColor = .clear
@@ -139,12 +141,16 @@ class HomeViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
         DispatchQueue.main.async { [weak self] in
-             self?.playVideo(with: "pasan")
+            self?.service.getSubscribesDataForMember(memberId: 9, page: 0, size: 3, orderby: "monthlyFee", sort: "DESC") { result in
+                switch result {
+                case .success(let subscribeDTO):
+                    print(subscribeDTO)
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
+            }
          }
 
-         DispatchQueue.main.asyncAfter(wallDeadline: .now() + 1.5) { [weak self] in
-             self?.playVideo(with: "pasan")
-         }
     }
     
     override func configure() {
