@@ -22,4 +22,14 @@ extension UIFont {
     static func pretendard(_ type: PretendardType, size: CGFloat) -> UIFont {
         return UIFont(name: "SUIT-\(type.rawValue)", size: size) ?? .systemFont(ofSize: size)
     }
+    
+    static let title1 = UIFont(name: PretendardType.Bold.rawValue, size: 32)
+    static let title2 = UIFont(name: PretendardType.Medium.rawValue, size: 32)
+    static let subTitle1 = UIFont(name: PretendardType.Bold.rawValue, size: 20)
+    static let subTitle2 = UIFont(name: PretendardType.Medium.rawValue, size: 20)
+    static let body1 = UIFont(name: PretendardType.Medium.rawValue, size: 16)
+    static let body2 = UIFont(name: PretendardType.Regular.rawValue, size: 16)
+    static let caption1 = UIFont(name: PretendardType.Medium.rawValue, size: 13)
+    static let caption2 = UIFont(name: PretendardType.Regular.rawValue, size: 13)
+    static let caption3 = UIFont(name: PretendardType.Regular.rawValue, size: 10)
 }
