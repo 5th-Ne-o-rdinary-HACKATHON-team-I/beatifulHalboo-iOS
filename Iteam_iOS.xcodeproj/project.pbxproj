@@ -15,6 +15,8 @@
 		091036762B118E9E0065A229 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 091036752B118E9E0065A229 /* SnapKit */; };
 		091036792B118EA80065A229 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 091036782B118EA80065A229 /* Alamofire */; };
 		0910367C2B118EB60065A229 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0910367B2B118EB60065A229 /* Then */; };
+		091036812B11945F0065A229 /* tempService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036802B11945F0065A229 /* tempService.swift */; };
+		091036832B1194650065A229 /* tempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036822B1194650065A229 /* tempModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		091036692B1184C40065A229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0910366C2B1184C40065A229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0910366E2B1184C40065A229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		091036802B11945F0065A229 /* tempService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempService.swift; sourceTree = "<group>"; };
+		091036822B1194650065A229 /* tempModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +64,40 @@
 		0910365F2B1184C20065A229 /* Iteam_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0910367F2B1194500065A229 /* Present */,
+				0910367E2B11944B0065A229 /* Service */,
+				0910367D2B11943C0065A229 /* Model */,
 				091036602B1184C20065A229 /* AppDelegate.swift */,
 				091036622B1184C20065A229 /* SceneDelegate.swift */,
-				091036642B1184C20065A229 /* ViewController.swift */,
 				091036692B1184C40065A229 /* Assets.xcassets */,
 				0910366B2B1184C40065A229 /* LaunchScreen.storyboard */,
 				0910366E2B1184C40065A229 /* Info.plist */,
 			);
 			path = Iteam_iOS;
+			sourceTree = "<group>";
+		};
+		0910367D2B11943C0065A229 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				091036822B1194650065A229 /* tempModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0910367E2B11944B0065A229 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				091036802B11945F0065A229 /* tempService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0910367F2B1194500065A229 /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				091036642B1184C20065A229 /* ViewController.swift */,
+			);
+			path = Present;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091036832B1194650065A229 /* tempModel.swift in Sources */,
 				091036652B1184C20065A229 /* ViewController.swift in Sources */,
 				091036612B1184C20065A229 /* AppDelegate.swift in Sources */,
 				091036632B1184C20065A229 /* SceneDelegate.swift in Sources */,
+				091036812B11945F0065A229 /* tempService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
