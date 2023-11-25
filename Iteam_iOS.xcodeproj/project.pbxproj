@@ -35,6 +35,8 @@
 		091036A92B11E0750065A229 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 091036A82B11E0750065A229 /* GoogleService-Info.plist */; };
 		091036AC2B11E1880065A229 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 091036AB2B11E1880065A229 /* FirebaseMessaging */; };
 		091036B12B11EA440065A229 /* tempEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036B02B11EA440065A229 /* tempEnum.swift */; };
+		091036B42B11FFC40065A229 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036B32B11FFC40065A229 /* HomeViewController.swift */; };
+		091036B82B1210740065A229 /* bodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036B72B1210740065A229 /* bodyView.swift */; };
 		09D4221D2B11D16200A81F15 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		091036A82B11E0750065A229 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		091036AD2B11E2F70065A229 /* Iteam_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Iteam_iOS.entitlements; sourceTree = "<group>"; };
 		091036B02B11EA440065A229 /* tempEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempEnum.swift; sourceTree = "<group>"; };
+		091036B32B11FFC40065A229 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		091036B72B1210740065A229 /* bodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bodyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		0910367F2B1194500065A229 /* Present */ = {
 			isa = PBXGroup;
 			children = (
+				091036B22B11FFB80065A229 /* Home */,
 				091036642B1184C20065A229 /* ViewController.swift */,
 			);
 			path = Present;
@@ -186,6 +191,15 @@
 				091036A62B11B3010065A229 /* BaseViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		091036B22B11FFB80065A229 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				091036B32B11FFC40065A229 /* HomeViewController.swift */,
+				091036B72B1210740065A229 /* bodyView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,12 +303,14 @@
 				0910368F2B11B1890065A229 /* String+.swift in Sources */,
 				091036652B1184C20065A229 /* ViewController.swift in Sources */,
 				091036882B11ABA70065A229 /* APIConstant.swift in Sources */,
+				091036B82B1210740065A229 /* bodyView.swift in Sources */,
 				091036A72B11B3010065A229 /* BaseViewController.swift in Sources */,
 				091036612B1184C20065A229 /* AppDelegate.swift in Sources */,
 				091036B12B11EA440065A229 /* tempEnum.swift in Sources */,
 				091036632B1184C20065A229 /* SceneDelegate.swift in Sources */,
 				091036812B11945F0065A229 /* tempService.swift in Sources */,
 				091036912B11B2120065A229 /* Fonts+.swift in Sources */,
+				091036B42B11FFC40065A229 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
