@@ -26,4 +26,6 @@ extension UIColor {
         }
         self.init(red: CGFloat(red) / 255, green: CGFloat(green) / 255, blue: CGFloat(blue) / 255, alpha: CGFloat(alpha) / 255)
     }
+    
+    static let colora = UIColor(hexString: "0019FF")
 }

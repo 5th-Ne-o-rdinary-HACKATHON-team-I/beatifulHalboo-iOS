@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.39 113.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3896d3;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #08287f;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #004294;
+      }
+
+      .cls-5 {
+        fill: #004898;
+      }
+
+      .cls-6 {
+        fill: #005bac;
+      }
+
+      .cls-7 {
+        fill: #0067b6;
+      }
+
+      .cls-8 {
+        fill: #008ccf;
+      }
+
+      .cls-9 {
+        fill: #007ac6;
+      }
+    </style>
+  </defs>
+  <rect class="cls-8" x="40.58" y="40.58" width="32.22" height="32.23"/>
+  <polygon class="cls-8" points="40.58 40.58 48.63 48.64 56.69 40.58 40.58 40.58"/>
+  <polygon class="cls-1" points="40.58 40.58 40.58 56.69 48.63 48.64 40.58 40.58"/>
+  <polygon class="cls-8" points="56.69 56.69 48.64 48.63 40.58 56.69 56.69 56.69"/>
+  <polygon class="cls-9" points="56.69 56.69 56.69 40.58 48.64 48.63 56.69 56.69"/>
+  <polygon class="cls-7" points="56.69 40.58 56.69 56.69 65.55 47.83 56.69 40.58"/>
+  <polygon class="cls-4" points="72.8 56.69 64.75 48.63 56.69 56.69 72.8 56.69"/>
+  <polygon class="cls-9" points="40.58 56.69 48.63 64.75 56.69 56.69 40.58 56.69"/>
+  <polygon class="cls-7" points="40.58 56.69 40.58 72.81 48.63 64.75 40.58 56.69"/>
+  <polygon class="cls-6" points="56.69 72.8 48.64 64.74 40.58 72.8 56.69 72.8"/>
+  <polygon class="cls-5" points="56.69 72.8 56.69 56.69 48.64 64.74 56.69 72.8"/>
+  <polygon class="cls-2" points="56.69 56.69 64.75 64.75 72.8 56.69 56.69 56.69"/>
+  <polygon class="cls-4" points="56.69 56.69 56.69 72.81 64.75 64.75 56.69 56.69"/>
+  <polygon class="cls-2" points="72.8 72.8 64.75 64.74 56.69 72.8 72.8 72.8"/>
+  <polygon class="cls-2" points="72.8 72.8 72.8 56.69 64.75 64.74 72.8 72.8"/>
+  <polygon class="cls-6" points="56.69 40.58 64.75 48.64 72.8 40.58 56.69 40.58"/>
+  <polygon class="cls-5" points="72.8 56.69 72.8 40.58 64.75 48.63 72.8 56.69"/>
+  <polygon class="cls-3" points="72.8 60.72 62.49 50.9 46.83 66.6 52.54 72.3 62.49 62.51 72.8 72.77 72.8 60.72"/>
+</svg>
