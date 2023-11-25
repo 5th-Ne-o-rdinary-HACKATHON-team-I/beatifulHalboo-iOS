@@ -32,6 +32,8 @@
 		091036A32B11B2600065A229 /* SUIT-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0910369A2B11B2600065A229 /* SUIT-SemiBold.ttf */; };
 		091036A42B11B2600065A229 /* SUIT-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0910369B2B11B2600065A229 /* SUIT-Regular.ttf */; };
 		091036A72B11B3010065A229 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036A62B11B3010065A229 /* BaseViewController.swift */; };
+		091036A92B11E0750065A229 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 091036A82B11E0750065A229 /* GoogleService-Info.plist */; };
+		091036AC2B11E1880065A229 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 091036AB2B11E1880065A229 /* FirebaseMessaging */; };
 		09D4221D2B11D16200A81F15 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		0910369A2B11B2600065A229 /* SUIT-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-SemiBold.ttf"; sourceTree = "<group>"; };
 		0910369B2B11B2600065A229 /* SUIT-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SUIT-Regular.ttf"; sourceTree = "<group>"; };
 		091036A62B11B3010065A229 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		091036A82B11E0750065A229 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		091036AD2B11E2F70065A229 /* Iteam_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Iteam_iOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091036AC2B11E1880065A229 /* FirebaseMessaging in Frameworks */,
 				09D4221D2B11D16200A81F15 /* IQKeyboardManagerSwift in Frameworks */,
 				091036762B118E9E0065A229 /* SnapKit in Frameworks */,
 				0910367C2B118EB60065A229 /* Then in Frameworks */,
@@ -96,6 +101,7 @@
 		0910365F2B1184C20065A229 /* Iteam_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				091036AD2B11E2F70065A229 /* Iteam_iOS.entitlements */,
 				091036922B11B2370065A229 /* Resource */,
 				0910368C2B11B1640065A229 /* Global */,
 				0910367F2B1194500065A229 /* Present */,
@@ -105,6 +111,7 @@
 				091036622B1184C20065A229 /* SceneDelegate.swift */,
 				0910366B2B1184C40065A229 /* LaunchScreen.storyboard */,
 				0910366E2B1184C40065A229 /* Info.plist */,
+				091036A82B11E0750065A229 /* GoogleService-Info.plist */,
 			);
 			path = Iteam_iOS;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 				0910367B2B118EB60065A229 /* Then */,
 				091036852B11AAB80065A229 /* Moya */,
 				09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */,
+				091036AB2B11E1880065A229 /* FirebaseMessaging */,
 			);
 			productName = Iteam_iOS;
 			productReference = 0910365D2B1184C20065A229 /* Iteam_iOS.app */;
@@ -235,6 +243,7 @@
 				0910367A2B118EB60065A229 /* XCRemoteSwiftPackageReference "Then" */,
 				091036842B11AAB80065A229 /* XCRemoteSwiftPackageReference "Moya" */,
 				09D4221B2B11D16200A81F15 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				091036AA2B11E1880065A229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 0910365E2B1184C20065A229 /* Products */;
 			projectDirPath = "";
@@ -257,6 +266,7 @@
 				091036A02B11B2600065A229 /* SUIT-ExtraBold.ttf in Resources */,
 				091036A22B11B2600065A229 /* SUIT-Heavy.ttf in Resources */,
 				091036A12B11B2600065A229 /* SUIT-Bold.ttf in Resources */,
+				091036A92B11E0750065A229 /* GoogleService-Info.plist in Resources */,
 				0910369D2B11B2600065A229 /* SUIT-Medium.ttf in Resources */,
 				0910369F2B11B2600065A229 /* SUIT-Light.ttf in Resources */,
 				091036A32B11B2600065A229 /* SUIT-SemiBold.ttf in Resources */,
@@ -417,11 +427,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Iteam_iOS/Iteam_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JA7UDVTQBU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Iteam_iOS/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -445,11 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Iteam_iOS/Iteam_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JA7UDVTQBU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Iteam_iOS/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -524,6 +538,14 @@
 				minimumVersion = 15.0.0;
 			};
 		};
+		091036AA2B11E1880065A229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 		09D4221B2B11D16200A81F15 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
@@ -554,6 +576,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 091036842B11AAB80065A229 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		091036AB2B11E1880065A229 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 091036AA2B11E1880065A229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 		09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
