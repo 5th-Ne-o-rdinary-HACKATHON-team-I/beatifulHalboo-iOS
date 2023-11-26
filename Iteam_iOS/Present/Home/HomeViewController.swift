@@ -170,6 +170,8 @@ class HomeViewController: BaseViewController {
         self.subView.titleLabel.text = "11월 구독 내역"
         self.subView.subLabel.text = "아름다운 거지님의 이번달 정기구독 결제총액은"
         self.subView.priceLabel.text = "24700".formatPriceWithWon()
+        self.halbooView.plusBtn.addTarget(self, action:#selector(addHalboBtnTap), for: .touchUpInside)
+        self.subView.plusBtn.addTarget(self, action:#selector(addsubBtnTap), for: .touchUpInside)
 
     }
     
@@ -346,4 +348,19 @@ extension HomeViewController {
         self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    @objc func addsubBtnTap() {
+        let vc = SubscribeVC()
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @objc func addHalboBtnTap() {
+        let vc = InstallmentPaymentVC()
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
 }

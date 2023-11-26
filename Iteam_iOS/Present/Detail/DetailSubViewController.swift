@@ -27,7 +27,7 @@ class DetailSubViewController: BaseViewController {
        $0.sizeToFit()
    }
     let priceLabel = UILabel().then {
-        $0.text = "1234500".formatPriceWithWon()
+        $0.text = "24700".formatPriceWithWon()
        $0.textColor = .black
        $0.font = UIFont.title2
        $0.sizeToFit()
@@ -38,7 +38,7 @@ class DetailSubViewController: BaseViewController {
         $0.titleLabel?.font = UIFont.caption3
     }
     private let dateSortBtn = UIButton().then {
-        $0.setTitle("결제일순", for: .normal)
+        $0.setTitle("구독순", for: .normal)
         $0.titleLabel?.font = UIFont.caption3
         $0.setTitleColor(UIColor(hexString: "#808080"), for: .normal)
     }
@@ -138,11 +138,17 @@ class DetailSubViewController: BaseViewController {
 }
 extension DetailSubViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: BodyTableViewCell.identifier, for: indexPath) as! BodyTableViewCell
+        cell.productLabel.text = subproduct[indexPath.row]
+        cell.subLabel.text = subcard[indexPath.row]
+        cell.priceLabel.text = subprice[indexPath.row].formatPriceWithWon()
+        cell.dateLabel.text = subdate[indexPath.row]
+        cell.img.image = UIImage(named: subImg[indexPath.row])
+
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

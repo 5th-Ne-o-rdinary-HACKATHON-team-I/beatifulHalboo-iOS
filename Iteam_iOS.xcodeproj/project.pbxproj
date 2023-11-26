@@ -60,6 +60,15 @@
 		0910370A2B12AD850065A229 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037052B12AD850065A229 /* CalculatorViewController.swift */; };
 		0910370C2B12B7840065A229 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910370B2B12B7840065A229 /* dummy.swift */; };
 		0910370F2B12BBAF0065A229 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 0910370E2B12BBAF0065A229 /* FirebaseMessaging */; };
+		091037152B12C7CC0065A229 /* InstallmentPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037112B12C7CC0065A229 /* InstallmentPaymentVC.swift */; };
+		091037162B12C7CC0065A229 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037122B12C7CC0065A229 /* CardCell.swift */; };
+		091037172B12C7CC0065A229 /* SubscribeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037132B12C7CC0065A229 /* SubscribeVC.swift */; };
+		091037182B12C7CC0065A229 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037142B12C7CC0065A229 /* MonthCell.swift */; };
+		0910371B2B12C8220065A229 /* addManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037192B12C8220065A229 /* addManager.swift */; };
+		0910371C2B12C8220065A229 /* addAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910371A2B12C8220065A229 /* addAPI.swift */; };
+		0910371E2B12C83F0065A229 /* addModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910371D2B12C83F0065A229 /* addModels.swift */; };
+		091037202B12C8AA0065A229 /* TextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910371F2B12C8AA0065A229 /* TextField+.swift */; };
+		091037222B12C8B20065A229 /* Label+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037212B12C8B20065A229 /* Label+.swift */; };
 		09D4221D2B11D16200A81F15 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +121,15 @@
 		091037042B12AD850065A229 /* CalculatorTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculatorTableViewHeaderView.swift; path = ../../../../../Downloads/Calculator/CalculatorTableViewHeaderView.swift; sourceTree = "<group>"; };
 		091037052B12AD850065A229 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculatorViewController.swift; path = ../../../../../Downloads/Calculator/CalculatorViewController.swift; sourceTree = "<group>"; };
 		0910370B2B12B7840065A229 /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
+		091037112B12C7CC0065A229 /* InstallmentPaymentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallmentPaymentVC.swift; sourceTree = "<group>"; };
+		091037122B12C7CC0065A229 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		091037132B12C7CC0065A229 /* SubscribeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeVC.swift; sourceTree = "<group>"; };
+		091037142B12C7CC0065A229 /* MonthCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
+		091037192B12C8220065A229 /* addManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addManager.swift; sourceTree = "<group>"; };
+		0910371A2B12C8220065A229 /* addAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addAPI.swift; sourceTree = "<group>"; };
+		0910371D2B12C83F0065A229 /* addModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addModels.swift; sourceTree = "<group>"; };
+		0910371F2B12C8AA0065A229 /* TextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+.swift"; sourceTree = "<group>"; };
+		091037212B12C8B20065A229 /* Label+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Label+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				091036822B1194650065A229 /* tempModel.swift */,
+				0910371D2B12C83F0065A229 /* addModels.swift */,
 				091036B02B11EA440065A229 /* tempEnum.swift */,
 				091036D02B12544C0065A229 /* LoginModel.swift */,
 				0910370B2B12B7840065A229 /* dummy.swift */,
@@ -183,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				091036802B11945F0065A229 /* tempService.swift */,
+				0910371A2B12C8220065A229 /* addAPI.swift */,
+				091037192B12C8220065A229 /* addManager.swift */,
 				091036872B11ABA70065A229 /* APIConstant.swift */,
 				091036CD2B12543E0065A229 /* LoginService.swift */,
 				091036F22B12988C0065A229 /* HomeService.swift */,
@@ -193,6 +214,7 @@
 		0910367F2B1194500065A229 /* Present */ = {
 			isa = PBXGroup;
 			children = (
+				091037102B12C7CC0065A229 /* AddHistory */,
 				091036F42B12ABBC0065A229 /* Cal */,
 				091036D62B1266B00065A229 /* Popuo */,
 				091036C32B1248060065A229 /* Login */,
@@ -208,8 +230,10 @@
 			isa = PBXGroup;
 			children = (
 				0910368A2B11B1130065A229 /* Color+.swift */,
+				0910371F2B12C8AA0065A229 /* TextField+.swift */,
 				0910368E2B11B1890065A229 /* String+.swift */,
 				091036902B11B2120065A229 /* Fonts+.swift */,
+				091037212B12C8B20065A229 /* Label+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -306,6 +330,17 @@
 				091037032B12AD850065A229 /* UIPreView.swift */,
 			);
 			path = Cal;
+			sourceTree = "<group>";
+		};
+		091037102B12C7CC0065A229 /* AddHistory */ = {
+			isa = PBXGroup;
+			children = (
+				091037112B12C7CC0065A229 /* InstallmentPaymentVC.swift */,
+				091037122B12C7CC0065A229 /* CardCell.swift */,
+				091037132B12C7CC0065A229 /* SubscribeVC.swift */,
+				091037142B12C7CC0065A229 /* MonthCell.swift */,
+			);
+			path = AddHistory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,21 +444,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091037162B12C7CC0065A229 /* CardCell.swift in Sources */,
 				091036CE2B12543E0065A229 /* LoginService.swift in Sources */,
 				091037062B12AD850065A229 /* CalculcatorTableViewCell.swift in Sources */,
 				0910370A2B12AD850065A229 /* CalculatorViewController.swift in Sources */,
+				091037202B12C8AA0065A229 /* TextField+.swift in Sources */,
 				091036C52B1248120065A229 /* LoginViewController.swift in Sources */,
 				0910368B2B11B1130065A229 /* Color+.swift in Sources */,
 				091036832B1194650065A229 /* tempModel.swift in Sources */,
 				0910368F2B11B1890065A229 /* String+.swift in Sources */,
 				091036D12B12544C0065A229 /* LoginModel.swift in Sources */,
+				0910371B2B12C8220065A229 /* addManager.swift in Sources */,
+				091037182B12C7CC0065A229 /* MonthCell.swift in Sources */,
 				091037092B12AD850065A229 /* CalculatorTableViewHeaderView.swift in Sources */,
 				091036652B1184C20065A229 /* ViewController.swift in Sources */,
 				091036E32B1281060065A229 /* thousnd2View.swift in Sources */,
 				091036BF2B1221220065A229 /* DetailSubViewController.swift in Sources */,
+				0910371E2B12C83F0065A229 /* addModels.swift in Sources */,
 				091037082B12AD850065A229 /* UIPreView.swift in Sources */,
 				0910370C2B12B7840065A229 /* dummy.swift in Sources */,
 				091036882B11ABA70065A229 /* APIConstant.swift in Sources */,
+				091037152B12C7CC0065A229 /* InstallmentPaymentVC.swift in Sources */,
 				091036B82B1210740065A229 /* bodyView.swift in Sources */,
 				091036C22B12299C0065A229 /* MyViewController.swift in Sources */,
 				091036A72B11B3010065A229 /* BaseViewController.swift in Sources */,
@@ -431,7 +472,9 @@
 				091036612B1184C20065A229 /* AppDelegate.swift in Sources */,
 				091036B12B11EA440065A229 /* tempEnum.swift in Sources */,
 				091036E12B127B310065A229 /* thirty2View.swift in Sources */,
+				0910371C2B12C8220065A229 /* addAPI.swift in Sources */,
 				091036632B1184C20065A229 /* SceneDelegate.swift in Sources */,
+				091037222B12C8B20065A229 /* Label+.swift in Sources */,
 				091036812B11945F0065A229 /* tempService.swift in Sources */,
 				091036912B11B2120065A229 /* Fonts+.swift in Sources */,
 				091036BD2B1220FE0065A229 /* DetailHalbooViewController.swift in Sources */,
@@ -442,6 +485,7 @@
 				091036F32B12988C0065A229 /* HomeService.swift in Sources */,
 				091036D82B1266C00065A229 /* PopupViewController.swift in Sources */,
 				091036DD2B1273B50065A229 /* thirtyView.swift in Sources */,
+				091037172B12C7CC0065A229 /* SubscribeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

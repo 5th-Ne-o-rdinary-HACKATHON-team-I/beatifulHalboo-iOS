@@ -118,6 +118,7 @@ extension LoginViewController {
                 //카카오 로그인을 통해 사용자 토큰을 발급 받은 후 사용자 관리 API 호출
                 self.kakaoLoginPaser()
                 let vc = HomeViewController()
+                self.navigationController?.navigationBar.topItem?.title = ""
                 self.navigationController?.navigationBar.isHidden = false
                 self.navigationController?.pushViewController(vc, animated: true)
             }

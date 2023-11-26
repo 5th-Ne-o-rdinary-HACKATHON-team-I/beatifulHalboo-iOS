@@ -27,7 +27,7 @@ class DetailHalbooViewController: BaseViewController {
        $0.sizeToFit()
    }
     let priceLabel = UILabel().then {
-        $0.text = "1234500".formatPriceWithWon()
+        $0.text = "3200000".formatPriceWithWon()
        $0.textColor = .black
        $0.font = UIFont.title2
        $0.sizeToFit()
@@ -141,12 +141,16 @@ class DetailHalbooViewController: BaseViewController {
 }
 extension DetailHalbooViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: BodyTableViewCell.identifier, for: indexPath) as! BodyTableViewCell
-        
+        cell.productLabel.text = product[indexPath.row]
+        cell.subLabel.text = Cardproduct[indexPath.row]
+        cell.priceLabel.text = price[indexPath.row].formatPriceWithWon()
+        cell.dateLabel.text = date[indexPath.row]
+        cell.img.image = UIImage(named: cardImg[indexPath.row])
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
