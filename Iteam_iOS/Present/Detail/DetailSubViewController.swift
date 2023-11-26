@@ -8,6 +8,12 @@
 import UIKit
 
 class DetailSubViewController: BaseViewController {
+    private var subproduct:[String] = ["유튜브","네이버","임티플러스"]
+    private var subcard:[String] = ["1회 납부/4개월","3회 납부/4개월","1회 납부/7개월"]
+    private var subprice:[String] = ["14900","5900","3900"]
+    private var subdate:[String] = ["2023년 9월15일","2023년 11월15일","2023년 10월15일"]
+    private var subImg:[String] = ["YoutubeMusic","NaverLogin","KaKaoLogin"]
+
     private let titleLabel = UILabel().then {
         $0.text = "11월 할부 결제 내역"
         $0.textColor = UIColor(hexString: "#FF3E23")

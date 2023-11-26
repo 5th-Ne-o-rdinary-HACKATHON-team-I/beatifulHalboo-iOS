@@ -8,6 +8,12 @@
 import UIKit
 
 class DetailHalbooViewController: BaseViewController {
+    private var Cardproduct:[String] = ["삼성카드","농협BC카드","현대카드"]
+    private var product:[String] = ["에어팟 맥스","오토바이","맥북프로"]
+    private var price:[String] = ["500000","1200000","1500000"]
+    private var date:[String] = ["2023년 9월15일","2023년 11월15일","2023년 10월15일"]
+    private var cardImg:[String] = ["삼성카드","농협BC카드","현대카드"]
+    
     private let titleLabel = UILabel().then {
         $0.text = "11월 할부 결제 내역"
         $0.textColor = UIColor(hexString: "#FF3E23")
@@ -140,6 +146,7 @@ extension DetailHalbooViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: BodyTableViewCell.identifier, for: indexPath) as! BodyTableViewCell
+        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

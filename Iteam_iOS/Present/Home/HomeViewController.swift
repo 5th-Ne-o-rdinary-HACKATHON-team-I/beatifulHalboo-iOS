@@ -6,15 +6,24 @@
 //
 
 import UIKit
-import Lottie
 import AVFoundation
 
 class HomeViewController: BaseViewController {
     
     private let scrollView = UIScrollView()
     private let service = HomeService()
-    private var dto: [SubscribeDTO] = []
-    
+    private var Cardproduct:[String] = ["삼성카드","농협BC카드","현대카드"]
+    private var product:[String] = ["에어팟 맥스","오토바이","맥북프로"]
+    private var price:[String] = ["500000","1200000","1500000"]
+    private var date:[String] = ["2023년 9월15일","2023년 11월15일","2023년 10월15일"]
+    private var cardImg:[String] = ["삼성카드","농협BC카드","현대카드"]
+
+    private var subproduct:[String] = ["유튜브","네이버","임티플러스"]
+    private var subcard:[String] = ["1회 납부/4개월","3회 납부/4개월","1회 납부/7개월"]
+    private var subprice:[String] = ["14900","5900","3900"]
+    private var subdate:[String] = ["2023년 9월15일","2023년 11월15일","2023년 10월15일"]
+    private var subImg:[String] = ["YoutubeMusic","NaverLogin","KaKaoLogin"]
+
     private let contentView = UIView().then {
         $0.backgroundColor = UIColor(hexString: "#F7F7F7")
     }
@@ -140,17 +149,6 @@ class HomeViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
-        DispatchQueue.main.async { [weak self] in
-            self?.service.getSubscribesDataForMember(memberId: 9, page: 0, size: 3, orderby: "monthlyFee", sort: "DESC") { result in
-                switch result {
-                case .success(let subscribeDTO):
-                    print(subscribeDTO)
-                case .failure(let error):
-                    print("Error: \(error)")
-                }
-            }
-         }
-
     }
     
     override func configure() {
@@ -162,8 +160,17 @@ class HomeViewController: BaseViewController {
         self.subView.goBtn.addTarget(self, action:#selector(subBtnTap), for: .touchUpInside)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(profileBtnTap))
         self.profileView.addGestureRecognizer(tapGesture)
+        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(calsBtnTap))
+        self.calBtn.addGestureRecognizer(tapGesture2)
         self.navigationController?.navigationBar.tintColor = .black
         self.navigationController?.navigationBar.topItem?.title = ""
+        let vc = PopupViewController()
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc,animated: false,completion: nil)
+        self.subView.titleLabel.text = "11월 구독 내역"
+        self.subView.subLabel.text = "아름다운 거지님의 이번달 정기구독 결제총액은"
+        self.subView.priceLabel.text = "24700".formatPriceWithWon()
+
     }
     
     override func addview() {
@@ -278,8 +285,30 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: BodyTableViewCell.identifier, for: indexPath) as! BodyTableViewCell
-        return cell
+        
+        if tableView == halbooView.tableview {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: BodyTableViewCell.identifier, for: indexPath) as! BodyTableViewCell
+            cell.productLabel.text = product[indexPath.row]
+            cell.subLabel.text = Cardproduct[indexPath.row]
+            cell.priceLabel.text = price[indexPath.row].formatPriceWithWon()
+            cell.dateLabel.text = date[indexPath.row]
+            cell.img.image = UIImage(named: cardImg[indexPath.row])
+
+            return cell
+        }
+        else {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: BodyTableViewCell.identifier, for: indexPath) as! BodyTableViewCell
+            cell.productLabel.text = subproduct[indexPath.row]
+            cell.subLabel.text = subcard[indexPath.row]
+            cell.priceLabel.text = subprice[indexPath.row].formatPriceWithWon()
+            cell.dateLabel.text = subdate[indexPath.row]
+            cell.img.image = UIImage(named: subImg[indexPath.row])
+
+            return cell
+        }
+
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 42.0 + 16.0
@@ -308,6 +337,13 @@ extension HomeViewController {
     @objc func profileBtnTap() {
         let vc = MyViewController()
         self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @objc func calsBtnTap() {
+        let vc = CalculatorViewController()
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -103,19 +103,19 @@ class MyViewController: BaseViewController {
         $0.sizeToFit()
     }
     private let monthHalboPrice = UILabel().then {
-        $0.text = "30000000".formatPriceWithWon()
+        $0.text = "3200000".formatPriceWithWon()
         $0.textColor = .black
         $0.font = UIFont.caption2
         $0.sizeToFit()
     }
     private let monthSubPrice = UILabel().then {
-        $0.text = "30000000".formatPriceWithWon()
+        $0.text = "24700".formatPriceWithWon()
         $0.textColor = .black
         $0.font = UIFont.caption2
         $0.sizeToFit()
     }
     private let monthPinPrice = UILabel().then {
-        $0.text = "30000000".formatPriceWithWon()
+        $0.text = "50000".formatPriceWithWon()
         $0.textColor = .black
         $0.font = UIFont.caption2
         $0.sizeToFit()
@@ -329,7 +329,6 @@ extension MyViewController {
         self.charNameLabel.textColor = UIColor(hexString: "#29CD0E")
         self.distroyLabel.text = "안전"
         self.distroyLabel.textColor = UIColor(hexString: "#29CD0E")
-
     }
     @objc func doneBtnTap() {
         self.safe()

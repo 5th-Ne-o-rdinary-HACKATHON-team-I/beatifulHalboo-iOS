@@ -92,9 +92,7 @@ extension LoginViewController {
             let userEmail = user?.kakaoAccount?.email
             UserInfo.shared.name = "최지철"
             UserInfo.shared.email = "sksk02zja@naver.com"
-            let vc = PopupViewController()
-            vc.modalPresentationStyle = .overFullScreen
-            self.present(vc,animated: false,completion: nil)
+
             if let url = user?.kakaoAccount?.profile?.profileImageUrl,
                let data = try? Data(contentsOf: url) {
                 print(data)
@@ -119,6 +117,9 @@ extension LoginViewController {
                 print(accessToken as Any)
                 //카카오 로그인을 통해 사용자 토큰을 발급 받은 후 사용자 관리 API 호출
                 self.kakaoLoginPaser()
+                let vc = HomeViewController()
+                self.navigationController?.navigationBar.isHidden = false
+                self.navigationController?.pushViewController(vc, animated: true)
             }
         }
     }

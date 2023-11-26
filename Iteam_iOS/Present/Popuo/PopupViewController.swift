@@ -50,7 +50,9 @@ class PopupViewController: BaseViewController {
 
     }
     @objc func doneBtnTap() {
+        
         self.dismiss(animated: false)
+
         
     }
     

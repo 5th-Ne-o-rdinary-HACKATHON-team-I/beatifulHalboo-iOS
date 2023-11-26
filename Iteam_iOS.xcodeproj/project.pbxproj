@@ -33,7 +33,6 @@
 		091036A42B11B2600065A229 /* SUIT-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0910369B2B11B2600065A229 /* SUIT-Regular.ttf */; };
 		091036A72B11B3010065A229 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036A62B11B3010065A229 /* BaseViewController.swift */; };
 		091036A92B11E0750065A229 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 091036A82B11E0750065A229 /* GoogleService-Info.plist */; };
-		091036AC2B11E1880065A229 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 091036AB2B11E1880065A229 /* FirebaseMessaging */; };
 		091036B12B11EA440065A229 /* tempEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036B02B11EA440065A229 /* tempEnum.swift */; };
 		091036B42B11FFC40065A229 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036B32B11FFC40065A229 /* HomeViewController.swift */; };
 		091036B82B1210740065A229 /* bodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036B72B1210740065A229 /* bodyView.swift */; };
@@ -47,7 +46,6 @@
 		091036CC2B124B7E0065A229 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 091036CB2B124B7E0065A229 /* KakaoSDKCommon */; };
 		091036CE2B12543E0065A229 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036CD2B12543E0065A229 /* LoginService.swift */; };
 		091036D12B12544C0065A229 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036D02B12544C0065A229 /* LoginModel.swift */; };
-		091036D42B125F6F0065A229 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 091036D32B125F6F0065A229 /* Lottie */; };
 		091036D82B1266C00065A229 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036D72B1266C00065A229 /* PopupViewController.swift */; };
 		091036DA2B1267B00065A229 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036D92B1267B00065A229 /* UserInfo.swift */; };
 		091036DD2B1273B50065A229 /* thirtyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036DC2B1273B50065A229 /* thirtyView.swift */; };
@@ -55,6 +53,13 @@
 		091036E12B127B310065A229 /* thirty2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036E02B127B310065A229 /* thirty2View.swift */; };
 		091036E32B1281060065A229 /* thousnd2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036E22B1281060065A229 /* thousnd2View.swift */; };
 		091036F32B12988C0065A229 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091036F22B12988C0065A229 /* HomeService.swift */; };
+		091037062B12AD850065A229 /* CalculcatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037012B12AD850065A229 /* CalculcatorTableViewCell.swift */; };
+		091037072B12AD850065A229 /* CalculateResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037022B12AD850065A229 /* CalculateResultViewController.swift */; };
+		091037082B12AD850065A229 /* UIPreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037032B12AD850065A229 /* UIPreView.swift */; };
+		091037092B12AD850065A229 /* CalculatorTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037042B12AD850065A229 /* CalculatorTableViewHeaderView.swift */; };
+		0910370A2B12AD850065A229 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091037052B12AD850065A229 /* CalculatorViewController.swift */; };
+		0910370C2B12B7840065A229 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910370B2B12B7840065A229 /* dummy.swift */; };
+		0910370F2B12BBAF0065A229 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 0910370E2B12BBAF0065A229 /* FirebaseMessaging */; };
 		09D4221D2B11D16200A81F15 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +106,12 @@
 		091036E02B127B310065A229 /* thirty2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirty2View.swift; sourceTree = "<group>"; };
 		091036E22B1281060065A229 /* thousnd2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thousnd2View.swift; sourceTree = "<group>"; };
 		091036F22B12988C0065A229 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		091037012B12AD850065A229 /* CalculcatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculcatorTableViewCell.swift; path = ../../../../../Downloads/Calculator/CalculcatorTableViewCell.swift; sourceTree = "<group>"; };
+		091037022B12AD850065A229 /* CalculateResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculateResultViewController.swift; path = ../../../../../Downloads/Calculator/CalculateResultViewController.swift; sourceTree = "<group>"; };
+		091037032B12AD850065A229 /* UIPreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIPreView.swift; path = ../../../../../Downloads/Calculator/UIPreView.swift; sourceTree = "<group>"; };
+		091037042B12AD850065A229 /* CalculatorTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculatorTableViewHeaderView.swift; path = ../../../../../Downloads/Calculator/CalculatorTableViewHeaderView.swift; sourceTree = "<group>"; };
+		091037052B12AD850065A229 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculatorViewController.swift; path = ../../../../../Downloads/Calculator/CalculatorViewController.swift; sourceTree = "<group>"; };
+		0910370B2B12B7840065A229 /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +119,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				091036AC2B11E1880065A229 /* FirebaseMessaging in Frameworks */,
+				0910370F2B12BBAF0065A229 /* FirebaseMessaging in Frameworks */,
 				09D4221D2B11D16200A81F15 /* IQKeyboardManagerSwift in Frameworks */,
 				091036762B118E9E0065A229 /* SnapKit in Frameworks */,
 				0910367C2B118EB60065A229 /* Then in Frameworks */,
 				091036CC2B124B7E0065A229 /* KakaoSDKCommon in Frameworks */,
-				091036D42B125F6F0065A229 /* Lottie in Frameworks */,
 				091036862B11AAB80065A229 /* Moya in Frameworks */,
 				091036792B118EA80065A229 /* Alamofire in Frameworks */,
 				091036C82B124B7E0065A229 /* KakaoSDK in Frameworks */,
@@ -164,6 +174,7 @@
 				091036822B1194650065A229 /* tempModel.swift */,
 				091036B02B11EA440065A229 /* tempEnum.swift */,
 				091036D02B12544C0065A229 /* LoginModel.swift */,
+				0910370B2B12B7840065A229 /* dummy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +193,7 @@
 		0910367F2B1194500065A229 /* Present */ = {
 			isa = PBXGroup;
 			children = (
+				091036F42B12ABBC0065A229 /* Cal */,
 				091036D62B1266B00065A229 /* Popuo */,
 				091036C32B1248060065A229 /* Login */,
 				091036C02B12298E0065A229 /* MyPage */,
@@ -284,6 +296,18 @@
 			path = Popuo;
 			sourceTree = "<group>";
 		};
+		091036F42B12ABBC0065A229 /* Cal */ = {
+			isa = PBXGroup;
+			children = (
+				091037022B12AD850065A229 /* CalculateResultViewController.swift */,
+				091037042B12AD850065A229 /* CalculatorTableViewHeaderView.swift */,
+				091037052B12AD850065A229 /* CalculatorViewController.swift */,
+				091037012B12AD850065A229 /* CalculcatorTableViewCell.swift */,
+				091037032B12AD850065A229 /* UIPreView.swift */,
+			);
+			path = Cal;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,11 +330,10 @@
 				0910367B2B118EB60065A229 /* Then */,
 				091036852B11AAB80065A229 /* Moya */,
 				09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */,
-				091036AB2B11E1880065A229 /* FirebaseMessaging */,
 				091036C72B124B7E0065A229 /* KakaoSDK */,
 				091036C92B124B7E0065A229 /* KakaoSDKAuth */,
 				091036CB2B124B7E0065A229 /* KakaoSDKCommon */,
-				091036D32B125F6F0065A229 /* Lottie */,
+				0910370E2B12BBAF0065A229 /* FirebaseMessaging */,
 			);
 			productName = Iteam_iOS;
 			productReference = 0910365D2B1184C20065A229 /* Iteam_iOS.app */;
@@ -346,9 +369,9 @@
 				0910367A2B118EB60065A229 /* XCRemoteSwiftPackageReference "Then" */,
 				091036842B11AAB80065A229 /* XCRemoteSwiftPackageReference "Moya" */,
 				09D4221B2B11D16200A81F15 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				091036AA2B11E1880065A229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				091036C62B124B7E0065A229 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				091036D22B125F6F0065A229 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				0910370D2B12BBAF0065A229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 0910365E2B1184C20065A229 /* Products */;
 			projectDirPath = "";
@@ -387,14 +410,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				091036CE2B12543E0065A229 /* LoginService.swift in Sources */,
+				091037062B12AD850065A229 /* CalculcatorTableViewCell.swift in Sources */,
+				0910370A2B12AD850065A229 /* CalculatorViewController.swift in Sources */,
 				091036C52B1248120065A229 /* LoginViewController.swift in Sources */,
 				0910368B2B11B1130065A229 /* Color+.swift in Sources */,
 				091036832B1194650065A229 /* tempModel.swift in Sources */,
 				0910368F2B11B1890065A229 /* String+.swift in Sources */,
 				091036D12B12544C0065A229 /* LoginModel.swift in Sources */,
+				091037092B12AD850065A229 /* CalculatorTableViewHeaderView.swift in Sources */,
 				091036652B1184C20065A229 /* ViewController.swift in Sources */,
 				091036E32B1281060065A229 /* thousnd2View.swift in Sources */,
 				091036BF2B1221220065A229 /* DetailSubViewController.swift in Sources */,
+				091037082B12AD850065A229 /* UIPreView.swift in Sources */,
+				0910370C2B12B7840065A229 /* dummy.swift in Sources */,
 				091036882B11ABA70065A229 /* APIConstant.swift in Sources */,
 				091036B82B1210740065A229 /* bodyView.swift in Sources */,
 				091036C22B12299C0065A229 /* MyViewController.swift in Sources */,
@@ -407,6 +435,7 @@
 				091036812B11945F0065A229 /* tempService.swift in Sources */,
 				091036912B11B2120065A229 /* Fonts+.swift in Sources */,
 				091036BD2B1220FE0065A229 /* DetailHalbooViewController.swift in Sources */,
+				091037072B12AD850065A229 /* CalculateResultViewController.swift in Sources */,
 				091036B42B11FFC40065A229 /* HomeViewController.swift in Sources */,
 				091036DF2B127A760065A229 /* thousndView.swift in Sources */,
 				091036DA2B1267B00065A229 /* UserInfo.swift in Sources */,
@@ -660,14 +689,6 @@
 				minimumVersion = 15.0.0;
 			};
 		};
-		091036AA2B11E1880065A229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.0.0;
-			};
-		};
 		091036C62B124B7E0065A229 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
@@ -682,6 +703,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.0.0;
+			};
+		};
+		0910370D2B12BBAF0065A229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
 			};
 		};
 		09D4221B2B11D16200A81F15 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
@@ -715,11 +744,6 @@
 			package = 091036842B11AAB80065A229 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
-		091036AB2B11E1880065A229 /* FirebaseMessaging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 091036AA2B11E1880065A229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
-		};
 		091036C72B124B7E0065A229 /* KakaoSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 091036C62B124B7E0065A229 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
@@ -735,10 +759,10 @@
 			package = 091036C62B124B7E0065A229 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
 			productName = KakaoSDKCommon;
 		};
-		091036D32B125F6F0065A229 /* Lottie */ = {
+		0910370E2B12BBAF0065A229 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 091036D22B125F6F0065A229 /* XCRemoteSwiftPackageReference "lottie-spm" */;
-			productName = Lottie;
+			package = 0910370D2B12BBAF0065A229 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 		09D4221C2B11D16200A81F15 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;

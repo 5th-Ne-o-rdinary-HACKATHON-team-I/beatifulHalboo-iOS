@@ -11,30 +11,30 @@ class BodyTableViewCell: UITableViewCell {
     
     static let identifier = "BodyTableViewCell"
     
-    private let img = UIImageView().then {
+     let img = UIImageView().then {
         $0.contentMode = .scaleAspectFit
         $0.layer.cornerRadius = 15
-        $0.backgroundColor = .systemGray
+        $0.backgroundColor = .clear
     }
-    private let productLabel = UILabel().then {
+     let productLabel = UILabel().then {
         $0.text = "상품명"
         $0.textColor = .black
         $0.font = UIFont.body2
         $0.sizeToFit()
     }
-    private let priceLabel = UILabel().then {
+     let priceLabel = UILabel().then {
         $0.text = "100000".formatPriceWithWon()
         $0.textColor = .black
         $0.font = UIFont.body2
         $0.sizeToFit()
     }
-    private let subLabel = UILabel().then {
+     let subLabel = UILabel().then {
         $0.text = "납품횟수/할부 개월 수"
         $0.textColor = UIColor(hexString: "#808080")
         $0.font = UIFont.caption3
         $0.sizeToFit()
     }
-    private let dateLabel = UILabel().then {
+     let dateLabel = UILabel().then {
         $0.text = "2023년 11월 3일"
         $0.textColor = UIColor(hexString: "#808080")
         $0.font = UIFont.caption3

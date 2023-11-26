@@ -22,7 +22,7 @@ class bodyView: UIView {
         $0.sizeToFit()
     }
      let priceLabel = UILabel().then {
-         $0.text = "1234500".formatPriceWithWon()
+         $0.text = "3200000".formatPriceWithWon()
         $0.textColor = .black
         $0.font = UIFont.caption3
         $0.sizeToFit()
