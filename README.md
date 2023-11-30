@@ -25,7 +25,7 @@
 
 ### Library
 
-- `Alamofire`
+- `Moya`
 - `Kingfisher`
 - `SnapKit`
 - `Then`
